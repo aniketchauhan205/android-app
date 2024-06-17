@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/registrationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Page"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Camera Feed Label -->
+    <TextView
+        android:id="@+id/cameraFeedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera Feed"
+        android:textSize="16sp"
+        android:layout_below="@id/registrationTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Camera Feed Placeholder -->
+    <View
+        android:id="@+id/cameraFeed"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/cameraFeedLabel"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/darker_gray"/>
+
+    <!-- Capture Button -->
+    <Button
+        android:id="@+id/captureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/custom_gray"
+        android:layout_below="@id/cameraFeed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button"/>
+
+    <!-- Name of Employee Input -->
+    <EditText
+        android:id="@+id/employeeNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name of Employee"
+        android:inputType="textPersonName"
+        android:layout_below="@id/captureButton"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <!-- Employee ID Input -->
+    <EditText
+        android:id="@+id/employeeIdInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:inputType="text"
+        android:layout_below="@id/employeeNameInput"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/custom_gray"
+        android:layout_below="@id/employeeIdInput"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:background="@drawable/rounded_button"/>
+
+</LinearLayout>
